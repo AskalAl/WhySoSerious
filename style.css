@@ -1,0 +1,51 @@
+html,
+body {
+  background: #000;
+  height: 100%;
+  width: 100%;
+}
+
+.text {
+  -webkit-box-align: center;
+          align-items: center;
+  color: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.text h1 {
+  -webkit-animation: example 10s linear forwards;
+          animation: example 10s linear forwards;
+  font-family: "Arial", "Helvetica", "Sans Serif";
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes example {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@keyframes example {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
