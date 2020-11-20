@@ -34,8 +34,8 @@ body {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(2.3);
-            transform: scale(2.3);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
@@ -45,7 +45,7 @@ body {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(3.3);
+            transform: scale(3.3);
   }
 }
