@@ -1,0 +1,201 @@
+/* this pen might not work on some systems sadly :( check out this one instead -> https://codepen.io/AlexTaietti/full/qRvJVW */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: black;
+  margin: 0;
+}
+
+.lamp {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.lamp__wire {
+  height: 33vh;
+  width: 1px;
+  background-color: white;
+}
+.lamp__wire::after {
+  content: '';
+  position: absolute;
+  height: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-radius: 3px;
+  width: 30px;
+  border-bottom: 15px solid white;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lamp__bulb {
+  position: absolute;
+  top: calc(100% + 30px);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 80px;
+  width: 80px;
+  z-index: -1;
+  background-color: black;
+}
+.lamp__bulb::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 53px  115px;
+  border-top-right-radius: 53px  115px;
+  border: 1px solid white;
+  border-top: 1px solid white;
+  border-bottom: none;
+  height: 25px;
+  width: 38px;
+  background-color: inherit;
+}
+.lamp__bulb__filament {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lamp__bulb__filament__base {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 15px;
+  height: 30px;
+  border: 1px solid white;
+  border-bottom-right-radius: 10px 40px;
+  border-bottom-left-radius: 10px 40px;
+  transform: translateX(-50%);
+}
+.lamp__bulb__filament__base::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 40px;
+  width: 1px;
+  top: 20px;
+  left: -4px;
+  background-color: white;
+  transform: rotate(12deg);
+}
+.lamp__bulb__filament__base::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 40px;
+  width: 1px;
+  top: 20px;
+  right: -4px;
+  background-color: white;
+  transform: rotate(-12deg);
+}
+.lamp__bulb__filament__tungsten {
+  position: absolute;
+  top: 54px;
+  left: -18px;
+}
+.lamp__bulb__filament__tungsten__winding {
+  position: absolute;
+  height: 10px;
+  width: 6px;
+  border-radius: 40px;
+  border: 1px solid white;
+}
+.lamp__bulb__filament__tungsten__winding--1 {
+  left: 3px;
+}
+.lamp__bulb__filament__tungsten__winding--2 {
+  left: 6px;
+}
+.lamp__bulb__filament__tungsten__winding--3 {
+  left: 9px;
+}
+.lamp__bulb__filament__tungsten__winding--4 {
+  left: 12px;
+}
+.lamp__bulb__filament__tungsten__winding--5 {
+  left: 15px;
+}
+.lamp__bulb__filament__tungsten__winding--6 {
+  left: 18px;
+}
+.lamp__bulb__filament__tungsten__winding--7 {
+  left: 21px;
+}
+.lamp__bulb__filament__tungsten__winding--8 {
+  left: 24px;
+}
+.lamp__bulb__filament__tungsten__winding--9 {
+  left: 27px;
+}
+.lamp.is-on .lamp__bulb {
+  background-color: white;
+  box-shadow: 0px 0px rgba(255, 255, 100, 0.5), 0px 0px 10px 10px #ffff64, 0px 0px 20px 20px #ffff64, 0px 0px 30px 30px #ffff64, 0px 0px 40px 40px #ffff64, 0px 0px 50px 50px #ffff64, 0px 0px 60px 60px #ffff64, 0px 0px 70px 70px #ffff64, 0px 0px 80px 80px #ffff64, 0px 0px 90px 90px #ffff64, 0px 0px 100px 100px #ffff64, 0px 0px 110px 110px #ffff64, 0px 0px 120px 120px #ffff64, 0px 0px 130px 130px #ffff64, 0px 0px 140px 140px #ffff64, 0px 0px 150px 150px #ffff64, 0px 0px 160px 160px #ffff64, 0px 0px 170px 170px #ffff64, 0px 0px 180px 180px #ffff64, 0px 0px 190px 190px #ffff64, 0px 0px 200px 200px #ffff64;
+}
+.lamp.is-on + .instruction span:nth-child(1) {
+  text-shadow: 0px 0px black, -0.36px 1px black, -0.72px 2px black, -1.08px 3px black, -1.44px 4px black, -1.8px 5px black, -2.16px 6px black, -2.52px 7px black, -2.88px 8px black, -3.24px 9px black, -3.6px 10px black, -3.96px 11px black, -4.32px 12px black, -4.68px 13px black, -5.04px 14px black, -5.4px 15px black, -5.76px 16px black, -6.12px 17px black, -6.48px 18px black, -6.84px 19px black, -7.2px 20px black, -7.56px 21px black, -7.92px 22px black, -8.28px 23px black, -8.64px 24px black, -9px 25px black, -9.36px 26px black, -9.72px 27px black, -10.08px 28px black, -10.44px 29px black, -10.8px 30px black, -11.16px 31px black, -11.52px 32px black, -11.88px 33px black, -12.24px 34px black, -12.6px 35px black;
+}
+.lamp.is-on + .instruction span:nth-child(2) {
+  text-shadow: 0px 0px black, -0.13px 1px black, -0.26px 2px black, -0.39px 3px black, -0.52px 4px black, -0.65px 5px black, -0.78px 6px black, -0.91px 7px black, -1.04px 8px black, -1.17px 9px black, -1.3px 10px black, -1.43px 11px black, -1.56px 12px black, -1.69px 13px black, -1.82px 14px black, -1.95px 15px black, -2.08px 16px black, -2.21px 17px black, -2.34px 18px black, -2.47px 19px black, -2.6px 20px black, -2.73px 21px black, -2.86px 22px black, -2.99px 23px black, -3.12px 24px black, -3.25px 25px black, -3.38px 26px black, -3.51px 27px black, -3.64px 28px black, -3.77px 29px black, -3.9px 30px black, -4.03px 31px black, -4.16px 32px black, -4.29px 33px black, -4.42px 34px black, -4.55px 35px black;
+}
+.lamp.is-on + .instruction span:nth-child(3) {
+  text-shadow: 0px 0px black, 0px 1px black, 0px 2px black, 0px 3px black, 0px 4px black, 0px 5px black, 0px 6px black, 0px 7px black, 0px 8px black, 0px 9px black, 0px 10px black, 0px 11px black, 0px 12px black, 0px 13px black, 0px 14px black, 0px 15px black, 0px 16px black, 0px 17px black, 0px 18px black, 0px 19px black, 0px 20px black, 0px 21px black, 0px 22px black, 0px 23px black, 0px 24px black, 0px 25px black, 0px 26px black, 0px 27px black, 0px 28px black, 0px 29px black, 0px 30px black, 0px 31px black, 0px 32px black, 0px 33px black, 0px 34px black, 0px 35px black;
+}
+.lamp.is-on + .instruction span:nth-child(4) {
+  text-shadow: 0px 0px black, 0.25px 1px black, 0.5px 2px black, 0.75px 3px black, 1px 4px black, 1.25px 5px black, 1.5px 6px black, 1.75px 7px black, 2px 8px black, 2.25px 9px black, 2.5px 10px black, 2.75px 11px black, 3px 12px black, 3.25px 13px black, 3.5px 14px black, 3.75px 15px black, 4px 16px black, 4.25px 17px black, 4.5px 18px black, 4.75px 19px black, 5px 20px black, 5.25px 21px black, 5.5px 22px black, 5.75px 23px black, 6px 24px black, 6.25px 25px black, 6.5px 26px black, 6.75px 27px black, 7px 28px black, 7.25px 29px black, 7.5px 30px black, 7.75px 31px black, 8px 32px black, 8.25px 33px black, 8.5px 34px black, 8.75px 35px black;
+}
+.lamp.is-on + .instruction span:nth-child(5) {
+  text-shadow: 0px 0px black, 0.5px 1px black, 1px 2px black, 1.5px 3px black, 2px 4px black, 2.5px 5px black, 3px 6px black, 3.5px 7px black, 4px 8px black, 4.5px 9px black, 5px 10px black, 5.5px 11px black, 6px 12px black, 6.5px 13px black, 7px 14px black, 7.5px 15px black, 8px 16px black, 8.5px 17px black, 9px 18px black, 9.5px 19px black, 10px 20px black, 10.5px 21px black, 11px 22px black, 11.5px 23px black, 12px 24px black, 12.5px 25px black, 13px 26px black, 13.5px 27px black, 14px 28px black, 14.5px 29px black, 15px 30px black, 15.5px 31px black, 16px 32px black, 16.5px 33px black, 17px 34px black, 17.5px 35px black;
+}
+
+.instruction {
+  position: absolute;
+  left: 50%;
+  top: calc(33vh + 150px);
+  font-size: 160px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  transform: translateX(-50%);
+  z-index: 9000;
+  user-select: none;
+}
+.instruction span {
+  position: relative;
+}
+.instruction span:nth-child(1) {
+  position: relative;
+  z-index: 1;
+}
+.instruction span:nth-child(2) {
+  position: relative;
+  z-index: 2;
+}
+.instruction span:nth-child(3) {
+  position: relative;
+  z-index: 3;
+}
+.instruction span:nth-child(4) {
+  position: relative;
+  z-index: 4;
+}
+.instruction span:nth-child(5) {
+  position: relative;
+  z-index: 5;
+}
