@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Sarala');
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+  font-family: Sarala, Arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#container {
+  max-width: 80vw;
+  max-height: 80vh;
+  position: relative;
+}
+
+#player {
+  width: 100%;
+  border: 2px solid #111;
+  box-shadow: 0 0 50px #111;
+}
+
+#capture-button {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -25px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+  opacity: 0.5;
+  outline: none;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+  
+  &:active {
+    background-color: #00ff00;
+  }
+}
+
+#output {
+  display: none;
+}
