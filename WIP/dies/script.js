@@ -138,14 +138,14 @@
             var blockNumber = Math.floor(Math.random() * Math.floor(1000));
             bitmap.width = 256;
             bitmap.height = 256;
-            g.font = '20px Arial';
+            g.font = '20px courier new';
             g.fillStyle = 'white';
             g.fillText('Block: ' + blockNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.4);
             g.fillText('Transactions: ' + transactionsNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.55);
-            g.fillText('---Spacemesh.io---', this.cubeSize * 0.1, this.cubeSize * 0.7);
-            g.fillText('EVERYTIME  YOU', this.cubeSize * 0.1, this.cubeSize * 1.0);
-            g.fillText('DONT       SMESH', this.cubeSize * 0.1, this.cubeSize * 1.15);
-            g.fillText('A UNICORN  DIES', this.cubeSize * 0.1, this.cubeSize * 1.30);
+            g.fillText('---SPACEMESH.io---', this.cubeSize * 0.1, this.cubeSize * 0.20);
+            g.fillText('|| EVERYTIME  YOU ||', this.cubeSize * 0.1, this.cubeSize * 0.85);
+            g.fillText('|| DONT     SMESH ||', this.cubeSize * 0.1, this.cubeSize * 1.0);
+            g.fillText('|| A UNICORN DIES ||', this.cubeSize * 0.1, this.cubeSize * 1.15);
 
             var geometry = new THREE.PlaneGeometry(this.cubeSize * 0.9, this.cubeSize * 0.9);
             var texture = new THREE.CanvasTexture(bitmap);
