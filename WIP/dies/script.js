@@ -140,8 +140,9 @@
             bitmap.height = 256;
             g.font = '20px Arial';
             g.fillStyle = 'white';
-            g.fillText('Yo Block: ' + blockNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.4);
+            g.fillText('Block: ' + blockNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.4);
             g.fillText('Transactions: ' + transactionsNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.55);
+            g.fillText('--------------------');
 
             var geometry = new THREE.PlaneGeometry(this.cubeSize * 0.9, this.cubeSize * 0.9);
             var texture = new THREE.CanvasTexture(bitmap);
