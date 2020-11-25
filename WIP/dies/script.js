@@ -10,7 +10,7 @@
         this.height = window.innerHeight;
         this.centerX = this.width/2;
         this.centerY = this.height/2;
-        this.cubeSize = 400;
+        this.cubeSize = 200;
         this.blockTime = 5000;
         this.TransactionsPerSecond = 2000;
         this.activeStep = 1;
