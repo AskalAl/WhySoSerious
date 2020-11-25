@@ -142,7 +142,7 @@
             g.fillStyle = 'white';
             g.fillText('Block: ' + blockNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.4);
             g.fillText('Transactions: ' + transactionsNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.55);
-            g.fillText('--------------------');
+            g.fillText('Addition: ', this.cubeSize * 0.1, this.cubeSize * 0.55);
 
             var geometry = new THREE.PlaneGeometry(this.cubeSize * 0.9, this.cubeSize * 0.9);
             var texture = new THREE.CanvasTexture(bitmap);
