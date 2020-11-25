@@ -142,8 +142,8 @@
             g.fillStyle = 'white';
             g.fillText('Block: ' + blockNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.4);
             g.fillText('Transactions: ' + transactionsNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.55);
-            g.fillText('---------------', this.cubeSize * 0.1, this.cubeSize * 0.7);
-            g.fillText('EVERYTIME   YOU', this.cubeSize * 0.1, this.cubeSize * 0.85);
+            g.fillText('---Spacemesh.io---', this.cubeSize * 0.1, this.cubeSize * 0.7);
+            g.fillText('EVERYTIME  YOU', this.cubeSize * 0.1, this.cubeSize * 0.85);
             g.fillText('DONT       SMESH', this.cubeSize * 0.1, this.cubeSize * 1.0);
             g.fillText('A UNICORN  DIES', this.cubeSize * 0.1, this.cubeSize * 1.15);
 
