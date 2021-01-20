@@ -1,5 +1,5 @@
-const commands = String.raw`samurai@internal-cdprojektred.com/:~ cd HAX
-samurai@internal-cdprojektred.com/HAX/:~ ls`;
+const commands = String.raw`21e8@mesh-cdprojektred.com/:~ cd HAX
+21e8@mesh-cdprojektred.com/HAX/:~ ls`;
 
 const beep = String.raw`
 
@@ -18,15 +18,15 @@ const beep = String.raw`
 
 const samurai = String.raw`
 
-             ..    ,,,,,,    ,,,,,,      ,,,,, .,,,,     ,,,,, .,,,,,,,,,,,,,    .,,,,,,    ,,,,,  
- #############/   #######.   #######    ###### /####,    (#### /##############   #######.   #####  
- #####((((((((/   ########   ########  ####### /####,    (#### /####*   /#####  *########   #####  
- #####((((*      #########.  ################# /####,    (#### /####*   ######  #########.  #####  
- ############.   #### (####  ################# /####,    (#### /############## *#### #####  (*,..  
- .############  #####  ####. ################# /####,    (##(( *,.    .,*/((##  ####/ #####  ####( 
-   /##########*,####,  (###( (,.    .,*/( ##### #####     ####( (###########   #####  *####  ####( 
-            (### ####   (#### ##### .###* ##### ######(/######, (####. #####(  ####/   ##### ####( 
-            /###.###,    ####.#####  ###  ####( .#############  (####.  #####.(####    /#### ####(
+ (      *        (       )     (     
+ )\ ) (  `       )\ ) ( /(     )\ )  
+(()/( )\))(  (  (()/( )\())(  (()/(  
+ /(_)|(_)()\ )\  /(_)|(_)\ )\  /(_)) 
+(_)) (_()((_|(_)(_))  _((_|(_)(_))   
+/ __||  \/  | __/ __|| || | __| _ \  
+\__ \| |\/| | _|\__ \| __ | _||   /  
+|___/|_|  |_|___|___/|_||_|___|_|_\  
+                                     
 `;
 
 let blink = document.querySelector('.blink');
@@ -78,18 +78,18 @@ const DrawCommands = async commands => {
 
 // Start the code
 (async()=> {
-	await DrawCommands("/:~ ssh samurai@internal-cdprojektred.com -p 2000");
+	await DrawCommands("/:~ ssh 21e8@mesh-cdprojektred.com -p 2021");
 	await Delay(1000);
-	RenderString("samurai@internal-cdprojektred.com password:");
+	RenderString("21e8@mesh-cdprojektred.com password:");
 	await Delay(5000);
 	RenderString("\n");
 	await DrawCommands(commands);
-	RenderString('\nbeep.js    samurai.js\n\n');
-	await DrawCommands('samurai@internal-cdprojektred.com/HAX:~ node beep.js');
+	RenderString('\nbeep.js    21e8.js\n\n');
+	await DrawCommands('21e8@mesh-cdprojektred.com/HAX:~ node beep.js');
 	await DrawLines( beep );
-	await TypeString("\n\nSeems you're not among the sheep after all. Wanna play a game? Watch for the beeps.");
+	await TypeString("\n\nSeems you're not among us after all. Wanna play a game? Watch for the beeps.");
 	await Delay(3000);
 	ResetTerminal();
-	await DrawCommands('samurai@internal-cdprojektred.com:~ KEY=3db7ca618243da1ba3bc76ab14bcf07b node samurai.js');
+	await DrawCommands('21e8@mesh-cdprojektred.com:~ KEY=3db7ca618243da1ba3bc76ab14bcf07b node 21e8.js');
 	await DrawLines(samurai);
 })();
