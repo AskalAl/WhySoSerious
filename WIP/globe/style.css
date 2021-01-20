@@ -14,7 +14,7 @@ body {
 }
 
 #output {
-  background-image: radial-gradient(circle farthest-corner at 75% 75%, #000010 0%, #001020 50%, #004030 100%);
+  background: radial-gradient(circle farthest-corner at 75% 75%, #00002A 0%, #00252A 50%, #25252A 100%);
   border-radius: 100%;
   color: #20dc80;
   font-family: "Inconsolata", monospace;
