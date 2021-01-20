@@ -1,4 +1,4 @@
-var passwords = ['password123', 'qwertyuiop', 'admin2015', 'trustno1', 'letmein6969'];
+var passwords = ['smeshers331', 'Tweedledee', 'Mesh2021', 'Agent0fChange', 'The_Sm3sh3r'];
 var indexOld;
 var index = Math.floor((Math.random() * passwords.length));
 var password = passwords[index];
