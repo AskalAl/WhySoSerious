@@ -26,8 +26,7 @@ const samurai = String.raw`
 / __||  \/  | __/ __|| || | __| _ \  
 \__ \| |\/| | _|\__ \| __ | _||   /  
 |___/|_|  |_|___|___/|_||_|___|_|_\  
-                                     
-`;
+                                     `;
 
 let blink = document.querySelector('.blink');
 const code = document.querySelector('.code');
